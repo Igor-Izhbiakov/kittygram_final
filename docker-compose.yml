@@ -1,9 +1,9 @@
 version: '3'
 
 volumes:
-  pg_data_kittygram:
-  static_volume_kittygram:
-  media_volume_kittygram:
+  pg_data:
+  static:
+  media:
 
 services:
   db:
