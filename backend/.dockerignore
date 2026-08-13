@@ -1,0 +1,15 @@
+.git
+.github
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.db.sqlite3
+*.sqlite3
+*.sqlite3.bak
+.env
+.venv
+venv/
+env/
+tests/
+collected_static/
