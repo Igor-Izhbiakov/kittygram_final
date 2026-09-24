@@ -13,11 +13,14 @@ services:
       - pg_data:/var/lib/postgresql/data
 
   backend:
-    image: igorpanda/kittygram_backend
-    env_file: .env
+    image: igorpanda/foodgram_backend:latest
+    container_name: foodgram-backend
+    restart: always
+    env_file:
+      - .env
     volumes:
-      - static:/backend_static
-      - media:/app/media
+      - static_value:/backend_static
+      - media_value:/app/media/
     depends_on:
       - db
 
